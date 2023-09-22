@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se Connecter</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/components.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/click.js"></script>
+</head>
+
+<body>
+    <main-header class="header"></main-header>
+
+    <h1>Se Connecter</h1>
+    <form>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Mot de passe</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <a id="btn" class="button_oublier" role="button" aria-label="Bouton Oublier Mot De Pass" tabindex="0"
+            href="oublierPassword.html">Mot de passe oublié?</a><br>
+
+        <a id="btn" class="button_header" role="button" aria-label="Bouton inscrire" tabindex="0" onclick="login()">Se
+            Connecter</a>
+
+        <div>
+            <p style="text-align: center;">OU</p>
+            <a id="btn" class="button_header" role="button" aria-label="Bouton Facebook" tabindex="0"
+                onclick="loginWithFacebook()"><img class="photo_icon" src="image/facebook.jpg" alt="Photo Facebook">Se
+                Connecter avec Facebook</a>
+            <a id="btn" class="button_header" role="button" aria-label="Bouton Google" tabindex="0"
+                onclick="loginWithGoogle()"><img class="photo_icon" src="image/google.jpg" alt="Photo Google">Se
+                Connecter avec Google&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+    </form>
+
+    <main-footer></main-footer>
+
+</body>
+
+</html>

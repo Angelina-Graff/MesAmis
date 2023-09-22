@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/components.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/click.js"></script>
+</head>
+
+<body>
+    <main-header-connect></main-header-connect>
+
+    <h1>Modification du compte</h1>
+    <form>
+        <label for="photo">Photo :</label><br>
+        <input type="file" name="photo" id="photo"><br><br>
+
+        <label for="nom">Nom :</label><br>
+        <input type="text" name="nom" id="nom"><br><br>
+
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" name="prenom" id="prenom"><br><br>
+
+        <label for="interets">Centres d'intérêt :</label><br>
+        <textarea name="interets" id="interets"></textarea><br><br>
+
+        <label for="departement">Département :</label><br>
+        <input type="text" name="departement" id="departement"><br><br>
+
+        <label for="ville">Ville :</label><br>
+        <input type="text" name="ville" id="ville"><br><br>
+
+        <label for="code_postale">Code postale* :</label><br>
+        <input type="text" name="code_postale" id="code_postale"><br><br>
+
+        <label for="a_propos">À propos de moi :</label><br>
+        <textarea name="a_propos" id="a_propos"></textarea><br><br>
+
+        <label for="email">Email*:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mot_de_passe">Mot de passe*:</label><br>
+        <input type="password" id="mot_de_passe" name="mot_de_passe" required><br><br>
+
+        <label for="confirmation">Confirmation*:</label><br>
+        <input type="password" id="confirmation" name="confirmation" required><br><br>
+
+        <a id="btn" class="button_header" role="button" aria-label="Bouton Sauvegarder" tabindex="0"
+        onclick="Sauvegarder()">Sauvegarder</a>
+
+    </form>
+
+    <main-footer></main-footer>
+
+</body>
+
+</html>
